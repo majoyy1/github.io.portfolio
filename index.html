@@ -51,7 +51,7 @@
     section h2 {
       font-size: 28px;
       margin-bottom: 20px;
-      color: #fffacd; /* Soft cream-yellow for section titles */
+      color: #fffacd; /* Soft cream-yellow */
     }
 
     section p {
@@ -60,16 +60,26 @@
       text-align: justify;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    /* Skills styling */
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
-    ul li {
-      margin: 8px 0;
+    .skill-box {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 10px;
       font-size: 16px;
+      text-align: left;
     }
 
+    .skill-box strong {
+      color: #fffacd;
+    }
+
+    /* Projects */
     .projects div {
       background: rgba(255, 255, 255, 0.2);
       margin: 10px 0;
@@ -122,13 +132,15 @@
   <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>💻 Web Development (HTML, CSS, JavaScript)</li>
-      <li>⚙️ Programming (C, Java, Python basics)</li>
-      <li>🎨 UI/UX Design</li>
-      <li>📊 Problem-Solving & Critical Thinking</li>
-      <li>🤝 Teamwork & Collaboration</li>
-    </ul>
+    <div class="skills-container">
+      <div class="skill-box"><strong>💻 Web Development:</strong> Proficient in HTML, CSS, and JavaScript for creating responsive websites.</div>
+      <div class="skill-box"><strong>⚙️ Programming:</strong> Knowledge in C, Java, and Python basics with problem-solving practice.</div>
+      <div class="skill-box"><strong>🎨 UI/UX Design:</strong> Ability to design user-friendly interfaces using Figma and Canva.</div>
+      <div class="skill-box"><strong>📊 Database Management:</strong> Basic understanding of SQL and database design concepts.</div>
+      <div class="skill-box"><strong>☁️ Cloud & Hosting:</strong> Familiar with GitHub Pages and cloud tools for project deployment.</div>
+      <div class="skill-box"><strong>🤝 Teamwork & Collaboration:</strong> Experienced in working with groups on academic and project tasks.</div>
+      <div class="skill-box"><strong>📝 Technical Writing:</strong> Ability to document projects and create reports clearly and effectively.</div>
+    </div>
   </section>
 
   <!-- Projects -->
@@ -159,7 +171,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Mary Joy Rodriguez | All Rights Reserved</p>
+    <p>Mary Joy Rodriguez</p>
   </footer>
 </body>
 </html>
